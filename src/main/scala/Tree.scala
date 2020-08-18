@@ -1,6 +1,7 @@
 object Tree extends App {
-  println("How high do you want your tree?")
-  var height = scala.io.StdIn.readInt()
+  var defaultValue:Int = 3
+  var height = 0
+  if (args.length!=0) height = args(0).toInt else height = defaultValue
 
   println("Here's your tree!")
   //print star
